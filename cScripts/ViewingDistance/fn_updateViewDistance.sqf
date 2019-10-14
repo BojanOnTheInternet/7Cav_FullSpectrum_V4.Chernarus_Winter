@@ -27,10 +27,6 @@ switch (true) do {
         setViewDistance tawvd_air;
         _dist = tawvd_air;
     };
-	
-     default {
-        _dist = 1600;
-    };
 };
 
 if(tawvd_syncObject) then {
