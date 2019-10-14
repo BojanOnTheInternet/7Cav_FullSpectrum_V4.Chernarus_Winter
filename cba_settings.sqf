@@ -2,7 +2,7 @@
 force force ace_advanced_ballistics_ammoTemperatureEnabled = true;
 force force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
 force force ace_advanced_ballistics_bulletTraceEnabled = true;
-force force ace_advanced_ballistics_enabled = false;
+force force ace_advanced_ballistics_enabled = true;
 force force ace_advanced_ballistics_muzzleVelocityVariationEnabled = true;
 force force ace_advanced_ballistics_simulationInterval = 0.05;
 
@@ -10,9 +10,9 @@ force force ace_advanced_ballistics_simulationInterval = 0.05;
 force force ace_advanced_fatigue_enabled = true;
 //ace_advanced_fatigue_enableStaminaBar = true;
 force force ace_advanced_fatigue_loadFactor = 1;
-force force ace_advanced_fatigue_performanceFactor = 2;
+force force ace_advanced_fatigue_performanceFactor = 1.40374;
 force force ace_advanced_fatigue_recoveryFactor = 3.03773;
-force force ace_advanced_fatigue_swayFactor = 0.5;
+force force ace_advanced_fatigue_swayFactor = 1;
 force force ace_advanced_fatigue_terrainGradientFactor = 1;
 
 // ACE Advanced Throwing
@@ -32,10 +32,10 @@ force force ace_arsenal_EnableRPTLog = false;
 //ace_arsenal_fontHeight = 4.5;
 
 // ACE Captives
-force force ace_captives_allowHandcuffOwnSide = false;
+force force ace_captives_allowHandcuffOwnSide = true;
 force force ace_captives_allowSurrender = true;
 force force ace_captives_requireSurrender = 0;
-force force ace_captives_requireSurrenderAi = true;
+force force ace_captives_requireSurrenderAi = false;
 
 // ACE Common
 force force ace_common_allowFadeMusic = true;
@@ -63,9 +63,9 @@ force force ace_explosives_requireSpecialist = true;
 
 // ACE Fragmentation Simulation
 force force ace_frag_enabled = true;
-force force ace_frag_maxTrack = 3;
-force force ace_frag_maxTrackPerFrame = 6;
-force force ace_frag_reflectionsEnabled = false;
+force force ace_frag_maxTrack = 10;
+force force ace_frag_maxTrackPerFrame = 10;
+force force ace_frag_reflectionsEnabled = true;
 force force ace_frag_spallEnabled = false;
 
 // ACE Goggles
@@ -105,7 +105,7 @@ force force ace_interaction_enableTeamManagement = true;
 
 // ACE Logistics
 force force ace_cargo_enable = true;
-force force ace_cargo_loadTimeCoefficient = 1.5;
+force force ace_cargo_loadTimeCoefficient = 2.5;
 force force ace_cargo_paradropTimeCoefficent = 1;
 force force ace_rearm_level = 1;
 force force ace_rearm_supply = 0;
@@ -124,14 +124,14 @@ force force ace_repair_repairDamageThreshold_engineer = 0.3;
 force force ace_repair_wheelRepairRequiredItems = 0;
 
 // ACE Magazine Repack
-force force ace_magazinerepack_timePerAmmo = 0.8;
-force force ace_magazinerepack_timePerBeltLink = 2.99732;
-force force ace_magazinerepack_timePerMagazine = 1;
+force force ace_magazinerepack_timePerAmmo = 1.5;
+force force ace_magazinerepack_timePerBeltLink = 4.99732;
+force force ace_magazinerepack_timePerMagazine = 2;
 
 // ACE Map
 force force ace_map_BFT_Enabled = true;
 force force ace_map_BFT_HideAiGroups = true;
-force force ace_map_BFT_Interval = 10;
+force force ace_map_BFT_Interval = 5;
 force force ace_map_BFT_ShowPlayerNames = false;
 force force ace_map_DefaultChannel = 1;
 force force ace_map_mapGlow = true;
@@ -155,7 +155,7 @@ force force ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
 force force ace_medical_ai_enabledFor = 2;
-force force ace_medical_AIDamageThreshold = 0.5;
+force force ace_medical_AIDamageThreshold = 1;
 force force ace_medical_allowLitterCreation = true;
 force force ace_medical_allowUnconsciousAnimationOnTreatment = false;
 force force ace_medical_amountOfReviveLives = -1;
@@ -172,7 +172,7 @@ force force ace_medical_enableScreams = false;
 force force ace_medical_enableUnconsciousnessAI = 0;
 force force ace_medical_enableVehicleCrashes = true;
 force force ace_medical_healHitPointAfterAdvBandage = false;
-force force ace_medical_increaseTrainingInLocations = false;
+force force ace_medical_increaseTrainingInLocations = true;
 force force ace_medical_keepLocalSettingsSynced = true;
 force force ace_medical_level = 2;
 force force ace_medical_litterCleanUpDelay = 0;
@@ -191,7 +191,7 @@ force force ace_medical_moveUnitsFromGroupOnUnconscious = false;
 force force ace_medical_painCoefficient = 1;
 //force force ace_medical_painEffectType = 0;
 force force ace_medical_painIsOnlySuppressed = true;
-force force ace_medical_playerDamageThreshold = 2;
+force force ace_medical_playerDamageThreshold = 1;
 force force ace_medical_preventInstaDeath = true;
 force force ace_medical_remoteControlledAI = true;
 force force ace_medical_useCondition_PAK = 1;
@@ -203,7 +203,7 @@ force force ace_medical_useLocation_SurgicalKit = 0;
 // ACE Mk6 Mortar
 force force ace_mk6mortar_airResistanceEnabled = false;
 force force ace_mk6mortar_allowCompass = true;
-force force ace_mk6mortar_allowComputerRangefinder = true;
+force force ace_mk6mortar_allowComputerRangefinder = false;
 force force ace_mk6mortar_useAmmoHandling = false;
 
 // ACE Name Tags
@@ -373,7 +373,7 @@ force force ace_winddeflection_simulationInterval = 0.05;
 force force ace_winddeflection_vehicleEnabled = true;
 
 // ACE Zeus
-force force ace_zeus_autoAddObjects = false;
+force force ace_zeus_autoAddObjects = true;
 force force ace_zeus_canCreateZeus = -1;
 force force ace_zeus_radioOrdnance = false;
 force force ace_zeus_remoteWind = false;
@@ -517,19 +517,18 @@ force force Achilles_Debug_Output_Enabled = false;
 //Achilles_var_moduleTreeHelmet = false;
 
 // ACRE2
-force force acre_sys_core_fullDuplex = true;
-force force acre_sys_core_ignoreAntennaDirection = false;
+force force acre_sys_core_fullDuplex = false;
+force force acre_sys_core_ignoreAntennaDirection = true;
 force force acre_sys_core_interference = true;
 //acre_sys_core_postmixGlobalVolume = 1;
 //acre_sys_core_premixGlobalVolume = 1;
-force force acre_sys_core_revealToAI = 1.5;
+force force acre_sys_core_revealToAI = true;
 //acre_sys_core_spectatorVolume = 1;
-force force acre_sys_core_terrainLoss = 0.4;
+force force acre_sys_core_terrainLoss = 0;
 force force acre_sys_core_ts3ChannelName = "";
 force force acre_sys_core_ts3ChannelPassword = "";
 force force acre_sys_core_ts3ChannelSwitch = false;
 force force acre_sys_core_unmuteClients = true;
-force force acre_sys_signal_signalModel = 3;
 
 // ACRE2 Zeus
 acre_sys_zeus_zeusCanSpectate = true;
