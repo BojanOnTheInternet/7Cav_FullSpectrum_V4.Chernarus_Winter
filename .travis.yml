@@ -9,17 +9,17 @@ before_script:
 - sudo apt-get install armake -y
 script:
 - export VERSION=`cat description.ext  | grep -o 'onLoadName = ".*"' | grep -o 'v[0-9.][0-9.]*'`
-- armake build -w unquoted-string -w redefinition-wo-undef -w excessive-concatenation -x ".*" -x "*.pbo" -x "*.md" . 7Cav_FullSpectrum_$VERSION.ruha.pbo
+- armake build -w unquoted-string -w redefinition-wo-undef -w excessive-concatenation -x ".*" -x "*.pbo" -x "*.md" . 7Cav_FullSpectrum_$VERSION.Chernarus_Winter.pbo
 - git tag $VERSION
 deploy:
   if:
     branch: master
   provider: releases
   skip_cleanup: true
-  file: '7Cav_FullSpectrum_$VERSION.ruha.pbo'
+  file: '7Cav_FullSpectrum_$VERSION.Chernarus_Winter.pbo'
   on:
     branch: master
-    repo: 7Cav/7Cav_FullSpectrum_V4.ruha
-  name: '7th Cavalry Full Spectrum $VERSION - ruha'
+    repo: 7Cav/7Cav_FullSpectrum_V4.Chernarus_Winter
+  name: '7th Cavalry Full Spectrum $VERSION - Chernarus_Winter'
   api_key:
-    secure: LxiT7RJTel/oLskEFAhDZsSui2ilFMoSQTQTSYVLvjZgtvrnKOyC9H5xJS7HPao5aQbhjBgV4ga/7H2l8/Tup57KROfMZ0uBM8upKIKBvONdA7kOK8LeJrmVOifXeRjH82KCEmzVo8KGcGHexjROQrOGDBUkepkQfZInukNDShQiu/pzVh6UO5P1EZt0x3/0EsY3XXsl7WgdOUqSn2h132fyPlv5yGsvcKnMdaksde00Sfi+M7+3esyb+07wB88Lyi7sJZcejRUvwT2vvhOd/olsHtesKpaGubW0oalicHni5y3Rp70Z5Zp5hatrDDB2ahMsYy/VYGRIfetLmVl45KgZIQ48prn0D34/1ffA/ifhtVCzK17UCtsznjN/BUeKwZohuUvugbeYgXJIoF+VAbCMjPcSndCEfytp6VgboTnptMmx5LaZ8rhVtvrU/U2mKOkDfj1hMPONNxcpca4ERuNvqht9WQu+D+UBPNOKAIRDImP3SD4REchvWvI3dpO5nEgUmUadksRfIVN/Qw9rhlXpVEQN5WTGc6VjXXORYtht+j4MO7s349ltdnWUFOH4dlFCSyydue2g0xCojc2TqIZTrteJlklg6Jlvu3Bsde68hwqzaNs8p/7xpf3wltqvxHotVYZDN7GSK/HNj1e4aFtAg91uRjj7h/Ls/SjqGT0=
+    secure: ZByQcEX80bmw9K+pyjcYWuby1+iX5Rvg0vv1VP9lRbLj/GS1axr2X6wRAMmdtfow7ysr/FbULFfFh1iKovTeX1WIrFTv34iAdkqWUIFCSgwYirW5V3Hkfb9lVxRgD+Kyuy/vD9jo2aavZIAOI0XVgNZxC3ZPxnUjM/4KxDkRz+yYIvGpPwOceyAyyMWomA29GHLlNIX6OQ12XlGfPKxCbDoFy2hIUQ3AFsPi7yiRgK3zaWqfjWJwItZ7FTPzTlxGGkt7hrketUF7lkjzTr+Q0b01DF/0gBXMaEl3pjoyKQ35qE8oSR4JG31HTx0rrW0NTg45Fvc5OtPf/iNSuFRuBWW3A9bAwHnTYE9EI0MliqJPA3LMHexEWk56fG81M892pT5qqI7Weo7L59Lp0/l9d7I8uszaau8hfAKbq0GzkQPyo9E0h6imYhc2F0Mo2JIAex3TTB4xT+g9lcQgFyEFRIFl5av79q5W/SwoG1j8/S3B1x0fIheDuEUupJbdQOY17ewywcjiLErp/PGngFBO+KtsFfDn1LOs1AUB2j6Uu6ZRUNXDuUgXR/jjLAp4WjONE4rUSChE0rdEvRenoMDZITs4WIj7wt1RdKuuRTVSO09GVtJYzE5MNeiN9B0frueX3lGIYl8o0CryQAxyk0FzolQMno55Ffsk07d9Z5RRm1Q=
